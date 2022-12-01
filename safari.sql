@@ -7,8 +7,9 @@ DROP TABLE staff;
 CREATE TABLE staff(
     id SERIAL PRIMARY KEY,
     name VARCHAR(255),
-    employmentNumber INT,
-    );
+    employmentNumber INT
+);
+
 INSERT INTO staff (name, employmentNumber) VALUES (
     'Shiro', 9876
 );
@@ -30,8 +31,9 @@ CREATE TABLE enclosures(
     id SERIAL PRIMARY KEY,
     name VARCHAR(255),
     capacity INT,
-    closedForMaintence BOOLEAN,
+    closedForMaintence BOOLEAN
 );
+
 INSERT INTO enclosures (name, capacity, closedForMaintence) VALUES(
     'BOB', 2, false
 );
@@ -56,6 +58,7 @@ CREATE TABLE animals(
     age INT,
     enclosure_id INT REFERENCES enclosures(id)
 );
+
 INSERT INTO animals(name, type, age, enclosure_id)VALUES(
     'Simon', 'Beetle', 1, 3
 );
@@ -88,6 +91,7 @@ CREATE TABLE assignments(
     enclosure_id INT REFERENCES enclosures(id),
     day VARCHAR(255)
 );
+
 INSERT INTO assignments(employee_id, enclosure_id, day) VALUES(
     1, 2, 'Tuesday'
 );
