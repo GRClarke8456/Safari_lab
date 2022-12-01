@@ -72,7 +72,7 @@ INSERT INTO animals(name, type, age, enclosure_id)VALUES(
     'Juno', 'Wolf', 14, 2
 );
 INSERT INTO animals(name, type, age, enclosure_id)VALUES(
-    'Batman', 'Bat', 2, 5
+    'Batman', 'Bat', 2, 1
 );
 INSERT INTO animals(name, type, age, enclosure_id)VALUES(
     'Kuro', 'Wolf', 6, 2
